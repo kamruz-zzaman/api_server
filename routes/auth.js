@@ -66,4 +66,5 @@ router.get('/', authenticateRequest, function (req, res) {
 
     res.send('Congratulations, you are in a secret area!');
 });
+
 module.exports = router;

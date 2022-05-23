@@ -11,6 +11,7 @@ app.use(cors());
 
 // Import Routes
 const authRoute = require('./routes/auth');
+const stationRoute = require('./routes/stations')
 
 // application routes
 const run = async () => {
@@ -18,6 +19,7 @@ const run = async () => {
         res.send('Hey, Welcome !');
     });
     app.use('/auth', authRoute);
+    app.use('/station', stationRoute);
 }
 
 
